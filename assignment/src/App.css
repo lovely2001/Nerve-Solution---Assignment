@@ -1,0 +1,116 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.toggle-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+.toggle-button {
+  border: none;
+  background-color: transparent;
+  color: grey;
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  flex: 1;
+}
+
+.toggle-button.selected {
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+}
+
+.dropdown-container select {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.empty-state {
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .toggle-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .toggle-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .dropdown-container select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .cards-container {
+    gap: 8px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .empty-state {
+    font-size: 16px;
+  }
+}
